@@ -1,0 +1,31 @@
+.main img,
+.main video {
+  top: 10%;
+  position: absolute;
+}
+
+.first-device-img {
+  z-index: 15;
+  width: 460px;
+}
+
+/* .second-device-img {
+  top: 64%;
+  left: 60%;
+  z-index: 20;
+  width: 320px;
+} */
+
+.first-record {
+  transform: translate(30%, 5%);
+  width: 288px;
+  z-index: 10;
+}
+
+/* .second-record {
+  width: 200px;
+  z-index: 15;
+  top: 64%;
+  left: 60%;
+  z-index: 20;
+} */

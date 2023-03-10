@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "id": 0,
+      "route": "About",
+      "to": ""
+    },
+    {
+      "id": 1,
+      "route": "Experience",
+      "to": ""
+    },
+    {
+      "id": 2,
+      "route": "Education",
+      "to": ""
+    },
+    {
+      "id": 3,
+      "route": "Main Projects",
+      "to": ""
+    },
+    {
+      "id": 4,
+      "route": "Contact",
+      "to": ""
+    }
+  ]
+}

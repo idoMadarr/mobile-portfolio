@@ -3,11 +3,25 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2d293d;
+  background: -webkit-linear-gradient(to right, #2d293d, #272727, #262331);
+  background: linear-gradient(to right, #272727, #272727, #232331);
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.main-screen {
+  min-height: 100vh;
 }
 
 .react-logo {
