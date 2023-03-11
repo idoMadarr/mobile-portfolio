@@ -1,4 +1,12 @@
-ul {
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -7,12 +15,12 @@ ul {
   background-color: #30383c9e;
 }
 
-ul li {
+.nav ul li {
   padding: 1.2rem;
   cursor: pointer;
 }
 
-ul li a {
+.nav ul li a {
   position: relative;
   display: block;
   font-family: Lato, sans-serif;
@@ -22,7 +30,7 @@ ul li a {
   transition: 0.5s;
 }
 
-ul li a::after {
+.nav ul li a::after {
   position: absolute;
   content: '';
   top: 100%;
@@ -35,11 +43,11 @@ ul li a::after {
   transition: transform 0.5s;
 }
 
-ul li a:hover {
+.nav ul li a:hover {
   color: #95a5a6;
 }
 
-ul li a:hover::after {
+.nav ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }

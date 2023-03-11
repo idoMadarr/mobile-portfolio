@@ -2,14 +2,23 @@ import navbar from '../../fixtures/navbar-links.json';
 import classes from './Navbar.module.css';
 
 const Navbar = () => {
+  const handleClickScroll = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <ul className={classes.navMenu}>
-      {navbar.links.map(({ id, route }) => (
-        <li key={id}>
-          <a>{route}</a>
-        </li>
-      ))}
-    </ul>
+    <nav className={classes.nav}>
+      <ul>
+        {navbar.links.map(({ id, route }) => (
+          <li key={id}>
+            <a onClick={handleClickScroll.bind(this, route)}>{route}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

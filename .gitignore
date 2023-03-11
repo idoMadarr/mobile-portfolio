@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
+/free_building
+/iphone_12_pro
+/judges_gavel
 
 # testing
 /coverage

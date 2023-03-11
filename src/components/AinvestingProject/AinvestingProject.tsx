@@ -1,10 +1,10 @@
-import Emulator from './Emulator/Emulator';
+import Emulator from '../Emulator/Emulator';
 import classes from './AinvestingProject.module.css';
 
 const AinvestingProject = () => {
   return (
     <div className={classes.container}>
-      <Emulator record={'record_v2'} device={1} />
+      <Emulator record={'record_v2'} />
       <div>
         <h1>
           <span>Ainvesting: </span>Online CFD Trading

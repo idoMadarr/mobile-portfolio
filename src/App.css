@@ -18,28 +18,28 @@ p {
 
 h1 {
   font-size: 3rem;
+  color: white;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: white;
 }
 
 .main-screen {
+  width: 75%;
+  margin: auto;
   min-height: 100vh;
 }
 
-.react-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .react-logo {
-    animation: react-logo-spin infinite 20s linear;
+@media (max-width: 80rem) {
+  .main-screen {
+    width: 85%;
   }
 }
 
-@keyframes react-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 100rem) {
+  .main-screen {
+    width: 90%;
   }
 }

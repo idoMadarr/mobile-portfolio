@@ -1,9 +1,14 @@
-import classes from './About.module.css';
+import Device from '../3DModels/Device';
+import ThreeDModel from '../3DModels/3DModel';
+import classes from './HeroSection.module.css';
 
-const About = () => {
+const HeroSection = () => {
   return (
-    <div className={classes.container}>
-      <div className={classes.about}>
+    <div id={'About'} className={classes['hero-container']}>
+      <div>
+        <h2>About</h2>
+      </div>
+      <div>
         <h1>
           Hi, I'm <span>Ido Adar</span>, a Fullstack & Cross Platform Mobile
           developer.
@@ -22,11 +27,13 @@ const About = () => {
           who likes to solve problems.
         </p>
       </div>
-      <div className={classes.section}>
-        <h1>About</h1>
+      <div>
+        <ThreeDModel autoRotate>
+          <Device />
+        </ThreeDModel>
       </div>
     </div>
   );
 };
 
-export default About;
+export default HeroSection;
