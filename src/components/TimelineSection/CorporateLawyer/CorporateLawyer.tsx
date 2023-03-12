@@ -1,10 +1,6 @@
-import ThreeDModel from '../../3DModels/3DModel';
-import Judge from '../../3DModels/Judge';
-import classes from './CorporateLawyer.module.css';
-
 const CorporateLawyer = () => {
   return (
-    <div className={classes.corporate}>
+    <div>
       <h3 className={'vertical-timeline-element-title'}>
         Corporate Lawyer at Moshe Kahn Advocates
       </h3>
@@ -16,11 +12,7 @@ const CorporateLawyer = () => {
         real-estete, and commercial law, including M&A transactions, and complex
         commercial litigation and dispute resolution proceedings.
       </p>
-      <div>
-        <ThreeDModel>
-          <Judge />
-        </ThreeDModel>
-      </div>
+      <div></div>
     </div>
   );
 };

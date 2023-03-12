@@ -1,5 +1,5 @@
 .main {
-  height: 45rem;
+  height: 36rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,11 +11,10 @@
 }
 
 .device-img {
-  width: 420px;
   z-index: 15;
 }
 
 .record {
-  width: 265px;
+  width: 218px;
   z-index: 10;
 }

@@ -1,0 +1,14 @@
+.header {
+  margin-left: 1rem;
+  width: 50%;
+}
+
+.header small {
+  color: white;
+}
+
+@media (max-width: 74rem) {
+  .header {
+    width: 85%;
+  }
+}

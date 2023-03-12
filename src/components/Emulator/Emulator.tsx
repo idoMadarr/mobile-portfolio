@@ -10,14 +10,14 @@ const Emulator: React.FC<EmulatorPropsType> = ({ record }) => {
     <div className={classes.main}>
       <img
         className={classes['device-img']}
-        src={require('../../assets/iphone.png')}
+        src={require('../../assets/iphone2.png')}
         alt={'iphone'}
       />
       <video className={classes['record']} autoPlay={true} muted loop>
-        {/* <source
+        <source
           src={require(`../../assets/${record}.mp4`)}
           type={'video/mp4'}
-        /> */}
+        />
       </video>
     </div>
   );

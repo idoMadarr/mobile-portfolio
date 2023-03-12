@@ -1,6 +1,3 @@
-import ThreeDModel from '../../3DModels/3DModel';
-import Building from '../../3DModels/Building';
-
 const Intern = () => {
   return (
     <div>
@@ -18,9 +15,6 @@ const Intern = () => {
         to provide the most professional and effective service to its client
         base in Israel and internationally.
       </p>
-      <ThreeDModel>
-        <Building />
-      </ThreeDModel>
     </div>
   );
 };
