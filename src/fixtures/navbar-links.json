@@ -12,12 +12,12 @@
     },
     {
       "id": 2,
-      "route": "Education",
+      "route": "Main Projects",
       "to": ""
     },
     {
       "id": 3,
-      "route": "Main Projects",
+      "route": "Education",
       "to": ""
     },
     {

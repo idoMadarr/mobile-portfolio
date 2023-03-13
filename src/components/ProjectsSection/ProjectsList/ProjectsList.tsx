@@ -1,3 +1,4 @@
+import ProjectsItem from '../ProjectsItem/ProjectsItem';
 import classes from './ProjectsList.module.css';
 
 const list = [
@@ -8,6 +9,7 @@ const list = [
     tech: 'React Native CLI',
     timestamps: 'April 2023',
     image: require('../../../assets/waveSounds-onWhite.jpg'),
+    url: '',
   },
   {
     id: 1,
@@ -16,6 +18,7 @@ const list = [
     tech: 'Docker, Kubernetes, Nodejs & Next',
     timestamps: '2022',
     image: require('../../../assets/docker.png'),
+    url: 'https://github.com/idoAdar/Microservices-Nodejs-Nextjs',
   },
   {
     id: 2,
@@ -24,26 +27,29 @@ const list = [
     tech: 'React Native & Nodejs',
     timestamps: 'current',
     image: require('../../../assets/waveSounds.jpg'),
+    url: 'https://github.com/idoAdar/ReactNative-TypeScript-waveSounds',
   },
 ];
 
 const ProjectsList = () => {
+  const navigate = (url: string) => {
+    if (url.length) {
+      window.location.href = url;
+    }
+  };
+
   return (
     <div className={classes['projects-list']}>
-      {list.map(({ id, title, desc, tech, timestamps, image }) => {
+      {list.map(({ id, title, desc, tech, url, image }) => {
         return (
-          <div className={classes['list-item']} key={id}>
-            <div>
-              <div className={classes['img-wrapper']}>
-                <img src={image} alt={'IMG'} />
-              </div>
-              <p>{title}</p>
-              <small>{desc}</small>
-            </div>
-            <div className={classes.tag}>
-              <small>Main Tech: {tech}</small>
-            </div>
-          </div>
+          <ProjectsItem
+            key={id}
+            title={title}
+            desc={desc}
+            tech={tech}
+            image={image}
+            navigate={navigate.bind(this, url)}
+          />
         );
       })}
     </div>

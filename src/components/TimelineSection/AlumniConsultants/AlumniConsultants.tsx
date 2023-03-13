@@ -36,7 +36,7 @@ const AlumniConsultants = () => {
           <span>main</span> developer for the project.
         </strong>
       </p>
-      <Emulator record={'record_v2'} />
+      <Emulator record={'record_v1'} />
     </div>
   );
 };

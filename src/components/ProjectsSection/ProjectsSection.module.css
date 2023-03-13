@@ -1,3 +1,9 @@
 .projects-main {
   padding: 4rem;
 }
+
+@media (max-width: 74rem) {
+  .projects-main {
+    padding: 1.5rem;
+  }
+}

@@ -4,7 +4,11 @@
 }
 
 .header small {
-  color: white;
+  color: var(--white);
+}
+
+.header h1::first-letter {
+  color: var(--blue);
 }
 
 @media (max-width: 74rem) {
