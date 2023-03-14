@@ -1,0 +1,90 @@
+.education-main {
+  display: flex;
+  padding: 4rem;
+  margin: 4rem 0;
+  border-left: 4px solid var(--blue);
+}
+
+.experience {
+  width: 50%;
+}
+
+.floating {
+  width: 50%;
+  position: relative;
+}
+
+.education-item {
+  max-width: 45rem;
+}
+
+.education-item h3 {
+  color: var(--blue);
+}
+
+.education-item p {
+  text-align: justify;
+}
+
+.education-item small {
+  color: white;
+  font-weight: bold;
+}
+
+.floating-logo {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+}
+
+.floating-logo img {
+  position: absolute;
+  width: 15rem;
+  top: 22%;
+  left: 30%;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 74rem) {
+  .education-main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .experience {
+    width: 100%;
+  }
+
+  .floating {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .floating-logo {
+    height: 85%;
+  }
+
+  .floating-logo img {
+    top: 20%;
+    left: 36%;
+  }
+}
+
+@media (max-width: 32rem) {
+  .floating-logo {
+    width: 100%;
+    height: 70%;
+  }
+
+  .floating-logo img {
+    top: 10%;
+    left: 16%;
+  }
+}

@@ -9,7 +9,8 @@ const list = [
     tech: 'React Native CLI',
     timestamps: 'April 2023',
     image: require('../../../assets/waveSounds-onWhite.jpg'),
-    url: '',
+    repo: null,
+    url: 'https://play.google.com/store/apps/details?id=com.uptrend.ainvesting&hl=us',
   },
   {
     id: 1,
@@ -18,7 +19,8 @@ const list = [
     tech: 'Docker, Kubernetes, Nodejs & Next',
     timestamps: '2022',
     image: require('../../../assets/docker.png'),
-    url: 'https://github.com/idoAdar/Microservices-Nodejs-Nextjs',
+    repo: 'https://github.com/idoAdar/Microservices-Nodejs-Nextjs',
+    url: null,
   },
   {
     id: 2,
@@ -27,28 +29,32 @@ const list = [
     tech: 'React Native & Nodejs',
     timestamps: 'current',
     image: require('../../../assets/waveSounds.jpg'),
-    url: 'https://github.com/idoAdar/ReactNative-TypeScript-waveSounds',
+    repo: 'https://github.com/idoAdar/ReactNative-TypeScript-waveSounds',
+    url: 'https://play.google.com/store/apps/details?id=com.wavesounds&hl=us&pli=1',
   },
 ];
 
 const ProjectsList = () => {
-  const navigate = (url: string) => {
-    if (url.length) {
-      window.location.href = url;
+  const navigate = (uri: any) => {
+    if (uri) {
+      window.location.href = uri;
     }
   };
 
   return (
     <div className={classes['projects-list']}>
-      {list.map(({ id, title, desc, tech, url, image }) => {
+      {list.map(({ id, title, desc, tech, url, repo, image }) => {
         return (
           <ProjectsItem
             key={id}
+            id={id}
             title={title}
             desc={desc}
             tech={tech}
             image={image}
-            navigate={navigate.bind(this, url)}
+            repo={repo}
+            url={url}
+            repoNavigate={navigate}
           />
         );
       })}

@@ -10,11 +10,12 @@
   border-radius: 25px;
   padding: 1rem;
   transition: all 0.3s ease-in-out;
+  box-shadow: 2px 3px 12px var(--grey);
 }
 
 .list-item:hover {
   transform: scale(1.03);
-  cursor: pointer;
+  background-color: #23282b9e;
 }
 
 .img-wrapper {
@@ -22,6 +23,7 @@
   height: 14rem;
   border-radius: 25px;
   overflow: hidden;
+  position: relative;
 }
 
 .img-wrapper img {
@@ -32,6 +34,24 @@
   transition: all 0.3s ease-in-out;
 }
 
+.img-wrapper div {
+  z-index: 15;
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-wrapper div svg {
+  padding: 0 0 0 0.6rem;
+}
+
+.img-wrapper div svg:hover {
+  color: var(--purple);
+  cursor: pointer;
+}
+
 .list-item p {
   font-weight: bold;
 }
@@ -40,6 +60,7 @@
   font-size: 1rem;
   display: block;
   color: #afafaf;
+  text-align: justify;
 }
 
 .list-item .tag small {

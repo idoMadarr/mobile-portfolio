@@ -3,6 +3,10 @@
   width: 50%;
 }
 
+.header p {
+  text-align: justify;
+}
+
 .header small {
   color: var(--white);
 }
