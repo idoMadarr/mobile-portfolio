@@ -1,0 +1,30 @@
+.experience {
+  width: 50%;
+}
+
+.experience h1::first-letter {
+  color: var(--blue);
+}
+
+.education-item {
+  max-width: 45rem;
+}
+
+.education-item h3 {
+  color: var(--blue);
+}
+
+.education-item p {
+  text-align: justify;
+}
+
+.education-item small {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 74rem) {
+  .experience {
+    width: 100%;
+  }
+}

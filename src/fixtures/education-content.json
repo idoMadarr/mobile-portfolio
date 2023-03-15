@@ -1,0 +1,28 @@
+{
+  "list": [
+    {
+      "id": 0,
+      "name": "Self-taught Developer",
+      "desc": "As a self-taught dev, I've taken charge of my education and progress as a developer. For that specific reason, I've found myself completing dozens of courses across all the main platforms such as Udmy, Academind, DevMountain, and much more. Also, I'm doing my best to keep updated with all the new technologies that come around.",
+      "date": "Anytime"
+    },
+    {
+      "id": 1,
+      "name": "Attorney at Law, Israel Bar Association, Jerusalem",
+      "desc": "Following my LL. B Bachelor in Law degree, I completed my certification as a member of the Israel bar association",
+      "date": "September 2018 — December 2018"
+    },
+    {
+      "id": 2,
+      "name": "LL. B Bachelor in Law",
+      "desc": "College of Management Academic Studies",
+      "date": "March 2014 — July 2017"
+    },
+    {
+      "id": 3,
+      "name": "Gishur Neve Zedek Mediation Center",
+      "desc": "Alternative dispute resolution",
+      "date": "February 2017 — November 2017"
+    }
+  ]
+}

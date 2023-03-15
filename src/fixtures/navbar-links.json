@@ -2,28 +2,19 @@
   "links": [
     {
       "id": 0,
-      "route": "About",
-      "to": ""
+      "route": "About"
     },
     {
       "id": 1,
-      "route": "Experience",
-      "to": ""
+      "route": "Experience"
     },
     {
       "id": 2,
-      "route": "Main Projects",
-      "to": ""
+      "route": "Main Projects"
     },
     {
       "id": 3,
-      "route": "Education",
-      "to": ""
-    },
-    {
-      "id": 4,
-      "route": "Contact",
-      "to": ""
+      "route": "Education"
     }
   ]
 }

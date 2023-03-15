@@ -1,8 +1,26 @@
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 import classes from './ProjectsHeader.module.css';
 
 const ProjectsHeader = () => {
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  const animation = {
+    opacity: inView ? 1 : 0,
+    x: inView ? 0 : -100,
+    transition: {
+      duration: 1,
+      ease: 'easeInOut',
+    },
+  };
+
   return (
-    <div className={classes.header}>
+    <motion.div
+      className={classes.header}
+      initial={{ opacity: 0 }}
+      animate={animation}
+      ref={ref}
+    >
       <small>MY WORK</small>
       <h1>Projects</h1>
       <p>
@@ -12,7 +30,7 @@ const ProjectsHeader = () => {
         written by myself with all the advanced technologies such React Native,
         React, NodeJS, MongoDB and much more.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

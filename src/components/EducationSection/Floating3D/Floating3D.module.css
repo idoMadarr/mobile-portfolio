@@ -1,10 +1,3 @@
-.education-main {
-  display: flex;
-  padding: 4rem;
-  margin: 4rem 0;
-  border-left: 4px solid var(--blue);
-}
-
 .floating {
   width: 50%;
   position: relative;
@@ -31,16 +24,6 @@
 }
 
 @media (max-width: 74rem) {
-  .education-main {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
-  .experience {
-    width: 100%;
-  }
-
   .floating {
     width: 100%;
     height: 30rem;

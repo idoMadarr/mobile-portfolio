@@ -23,7 +23,7 @@
 .nav ul li a {
   position: relative;
   display: block;
-  font-family: Lato, sans-serif;
+  /* font-family: Lato, sans-serif; */
   color: #ecf0f1;
   text-decoration: none;
   text-transform: uppercase;
@@ -50,4 +50,37 @@
 .nav ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+@media (max-width: 60rem) {
+  .nav ul {
+    /* background-color: green; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* list-style-type: none; */
+    /* justify-content: center; */
+    /* margin: auto; */
+    /* background-color: var(--blue); */
+  }
+
+  .nav ul li {
+    /* width: 120px;
+    background-color: red;
+    margin: 1px; */
+    /* padding: 1rem; */
+    /* cursor: pointer; */
+  }
+
+  .nav ul li a {
+    font-size: 0.8rem;
+    /* width: 100px; */
+    /* background-color: red; */
+    /* position: relative;
+    display: block;
+    font-size: 0.8rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s; */
+  }
 }

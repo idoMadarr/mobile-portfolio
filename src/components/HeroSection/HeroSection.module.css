@@ -42,9 +42,26 @@
   color: var(--blue);
 }
 
+.details {
+  width: 100%;
+}
+
+.details small,
+.details p,
+.details a {
+  font-size: 1rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.details svg {
+  margin-left: 0.5rem;
+}
+
 @media (max-width: 60rem) {
   .hero-container {
     display: block;
+    margin: 4rem 0;
   }
 
   .hero-container div:nth-child(1),

@@ -1,5 +1,7 @@
 import ProjectsItem from '../ProjectsItem/ProjectsItem';
 import classes from './ProjectsList.module.css';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const list = [
   {
@@ -41,23 +43,41 @@ const ProjectsList = () => {
     }
   };
 
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  const animation = {
+    opacity: inView ? 1 : 0,
+    x: inView ? 0 : 100,
+    transition: {
+      duration: 1,
+      ease: 'easeInOut',
+    },
+  };
+
   return (
     <div className={classes['projects-list']}>
-      {list.map(({ id, title, desc, tech, url, repo, image }) => {
-        return (
-          <ProjectsItem
-            key={id}
-            id={id}
-            title={title}
-            desc={desc}
-            tech={tech}
-            image={image}
-            repo={repo}
-            url={url}
-            repoNavigate={navigate}
-          />
-        );
-      })}
+      <motion.div
+        className={classes['layout-list']}
+        initial={{ opacity: 0 }}
+        animate={animation}
+        ref={ref}
+      >
+        {list.map(({ id, title, desc, tech, url, repo, image }) => {
+          return (
+            <ProjectsItem
+              key={id}
+              id={id}
+              title={title}
+              desc={desc}
+              tech={tech}
+              image={image}
+              repo={repo}
+              url={url}
+              repoNavigate={navigate}
+            />
+          );
+        })}
+      </motion.div>
     </div>
   );
 };

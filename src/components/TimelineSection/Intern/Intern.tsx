@@ -1,6 +1,8 @@
+import classes from './Intern.module.css';
+
 const Intern = () => {
   return (
-    <div>
+    <div className={classes.position}>
       <h3 className='vertical-timeline-element-title'>
         Intern at Hagag Buchnik Weinstein and Co. Law Firm
       </h3>

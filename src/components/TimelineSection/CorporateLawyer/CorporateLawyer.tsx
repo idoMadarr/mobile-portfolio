@@ -1,6 +1,8 @@
+import classes from './CorporateLawyer.module.css';
+
 const CorporateLawyer = () => {
   return (
-    <div>
+    <div className={classes.position}>
       <h3 className={'vertical-timeline-element-title'}>
         Corporate Lawyer at Moshe Kahn Advocates
       </h3>
@@ -12,7 +14,6 @@ const CorporateLawyer = () => {
         real-estete, and commercial law, including M&A transactions, and complex
         commercial litigation and dispute resolution proceedings.
       </p>
-      <div></div>
     </div>
   );
 };

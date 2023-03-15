@@ -1,14 +1,17 @@
 .projects-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 30rem;
   border-radius: 25px;
+  min-height: 30rem;
   background-color: var(--greyish);
 }
 
+.layout-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 74rem) {
-  .projects-list {
+  .layout-list {
     margin: auto;
     flex-direction: column;
     padding: 0;
