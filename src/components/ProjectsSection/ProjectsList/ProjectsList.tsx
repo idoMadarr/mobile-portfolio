@@ -20,7 +20,7 @@ const list = [
     desc: 'Full kubernetes architecture with nodejs. Communicate with NATS streaming server.',
     tech: 'Docker, Kubernetes, Nodejs & Next',
     timestamps: '2022',
-    image: require('../../../assets/docker.png'),
+    image: require('../../../assets/docker_kubernetes.png'),
     repo: 'https://github.com/idoAdar/Microservices-Nodejs-Nextjs',
     url: null,
   },

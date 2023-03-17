@@ -31,8 +31,8 @@ const HeroSection = () => {
       </div>
       <div>
         <h1>
-          Hi, I'm <span>Ido Adar</span>, a Fullstack & Cross Platform Mobile
-          developer.
+          Hi, I'm <span>Ido Adar</span>, a self-taught Fullstack & Cross
+          Platform Mobile developer.
         </h1>
         <p>
           After two years in the law field as a young Corporate Lawyer, I

@@ -12,6 +12,7 @@
 
 .device-img {
   z-index: 15;
+  overflow: hidden;
 }
 
 .record {

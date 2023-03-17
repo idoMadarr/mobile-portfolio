@@ -17,14 +17,15 @@ const AlumniConsultants = () => {
       </p>
       <ul>
         <li>
-          A real-time application that requires full optimization performance.
+          A real-time application that requires full optimization performance
+          with SocketIO.
         </li>
         <li>
           Secure authentication process including Social login via Facebook or
           Gmail.
         </li>
         <li>Full and customized navigation.</li>
-        <li>Multilanguage application with RTL support.</li>
+        <li>Multilanguage application including RTL support.</li>
         <li>
           Native device features, Upload files, Push notification, Reanimated
           effects etc.
@@ -36,7 +37,7 @@ const AlumniConsultants = () => {
           <span>main</span> developer for the project.
         </strong>
       </p>
-      <Emulator record={'record_v1'} />
+      <Emulator record={'record_v4'} />
     </div>
   );
 };
