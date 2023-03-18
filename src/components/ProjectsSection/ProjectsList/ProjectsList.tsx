@@ -1,6 +1,7 @@
 import ProjectsItem from '../ProjectsItem/ProjectsItem';
 import classes from './ProjectsList.module.css';
 import { useInView } from 'react-intersection-observer';
+import { isBrowser } from 'react-device-detect';
 import { motion } from 'framer-motion';
 
 const list = [
@@ -10,7 +11,7 @@ const list = [
     desc: 'Ainvesting is a social trading App for Crypto CFDs trading that provies real-time market data and advanced trading tools. (available on App Store / Play Store).',
     tech: 'React Native CLI',
     timestamps: 'April 2023',
-    image: require('../../../assets/waveSounds-onWhite.jpg'),
+    image: require('../../../assets/ainvesting.jpg'),
     repo: null,
     url: 'https://play.google.com/store/apps/details?id=com.uptrend.ainvesting&hl=us',
   },
@@ -45,20 +46,22 @@ const ProjectsList = () => {
 
   const [ref, inView] = useInView({ triggerOnce: true });
 
-  const animation = {
-    opacity: inView ? 1 : 0,
-    x: inView ? 0 : 100,
-    transition: {
-      duration: 1,
-      ease: 'easeInOut',
-    },
-  };
+  const animation = isBrowser
+    ? {
+        opacity: inView ? 1 : 0,
+        x: inView ? 0 : 100,
+        transition: {
+          duration: 1,
+          ease: 'easeInOut',
+        },
+      }
+    : {};
 
   return (
     <div className={classes['projects-list']}>
       <motion.div
         className={classes['layout-list']}
-        initial={{ opacity: 0 }}
+        initial={{ opacity: isBrowser ? 0 : 1 }}
         animate={animation}
         ref={ref}
       >

@@ -4,23 +4,26 @@ import { motion } from 'framer-motion';
 import classes from './EducationList.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShapes } from '@fortawesome/free-solid-svg-icons';
+import { isBrowser } from 'react-device-detect';
 
 const EducationList = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
-  const animation = {
-    opacity: inView ? 1 : 0,
-    y: inView ? 0 : -100,
-    transition: {
-      duration: 1,
-      ease: 'easeInOut',
-    },
-  };
+  const animation = isBrowser
+    ? {
+        opacity: inView ? 1 : 0,
+        y: inView ? 0 : -100,
+        transition: {
+          duration: 1,
+          ease: 'easeInOut',
+        },
+      }
+    : {};
 
   return (
     <motion.div
       className={classes.experience}
-      initial={{ opacity: 0 }}
+      initial={{ opacity: isBrowser ? 0 : 1 }}
       animate={animation}
       ref={ref}
     >
