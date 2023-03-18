@@ -1,12 +1,12 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import { isBrowser } from 'react-device-detect';
+import { isAndroid } from 'react-device-detect';
 import classes from './ProjectsHeader.module.css';
 
 const ProjectsHeader = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
-  const animation = isBrowser
+  const animation = !isAndroid
     ? {
         opacity: inView ? 1 : 0,
         x: inView ? 0 : -100,
@@ -20,7 +20,7 @@ const ProjectsHeader = () => {
   return (
     <motion.div
       className={classes.header}
-      initial={{ opacity: isBrowser ? 0 : 1 }}
+      initial={{ opacity: !isAndroid ? 0 : 1 }}
       animate={animation}
       ref={ref}
     >

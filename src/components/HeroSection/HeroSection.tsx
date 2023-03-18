@@ -4,7 +4,7 @@ import classes from './HeroSection.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLink, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
-import { isBrowser } from 'react-device-detect';
+import { isAndroid } from 'react-device-detect';
 
 const HeroSection = () => {
   const variants = {
@@ -23,7 +23,7 @@ const HeroSection = () => {
     <motion.div
       id={'About'}
       className={classes['hero-container']}
-      variants={isBrowser ? variants : {}}
+      variants={!isAndroid ? variants : {}}
       initial={'init'}
       animate={'animate'}
     >
@@ -59,11 +59,13 @@ const HeroSection = () => {
           <small>052-5577-575</small>
         </div>
       </div>
-      <div>
-        <ThreeDModel autoRotate>
-          <Device />
-        </ThreeDModel>
-      </div>
+      {!isAndroid && (
+        <div>
+          <ThreeDModel autoRotate>
+            <Device />
+          </ThreeDModel>
+        </div>
+      )}
     </motion.div>
   );
 };

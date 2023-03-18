@@ -1,7 +1,7 @@
 import ProjectsItem from '../ProjectsItem/ProjectsItem';
 import classes from './ProjectsList.module.css';
 import { useInView } from 'react-intersection-observer';
-import { isBrowser } from 'react-device-detect';
+import { isAndroid } from 'react-device-detect';
 import { motion } from 'framer-motion';
 
 const list = [
@@ -46,7 +46,7 @@ const ProjectsList = () => {
 
   const [ref, inView] = useInView({ triggerOnce: true });
 
-  const animation = isBrowser
+  const animation = !isAndroid
     ? {
         opacity: inView ? 1 : 0,
         x: inView ? 0 : 100,
@@ -61,7 +61,7 @@ const ProjectsList = () => {
     <div className={classes['projects-list']}>
       <motion.div
         className={classes['layout-list']}
-        initial={{ opacity: isBrowser ? 0 : 1 }}
+        initial={{ opacity: !isAndroid ? 0 : 1 }}
         animate={animation}
         ref={ref}
       >
