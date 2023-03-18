@@ -12,8 +12,8 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <RootTimeline />
-      <TechStack />
-      <ProjectsSection />
+      {/* <TechStack /> */}
+      {/* <ProjectsSection /> */}
       <EducationSection />
     </div>
   );
