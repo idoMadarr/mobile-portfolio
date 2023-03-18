@@ -1,29 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.d556c83b.css",
-    "main.js": "/static/js/main.74fa95b3.js",
-    "static/media/record_v3.mp4": "/static/media/record_v3.c6baf9287fc0d8e5c817.mp4",
-    "static/media/record.mp4": "/static/media/record.7cf78979e2ad5d5d9f85.mp4",
+    "main.js": "/static/js/main.86aa13eb.js",
     "static/media/record_v4.mp4": "/static/media/record_v4.59d5805a006d46cd9680.mp4",
-    "static/media/record_v1.mp4": "/static/media/record_v1.e11497b8f1b14d8f76d5.mp4",
-    "static/media/WhatsApp Video 2023-03-09 at 16.06.04 (1).mp4": "/static/media/WhatsApp Video 2023-03-09 at 16.06.04 (1).20a86aedceee7ee58e4d.mp4",
-    "static/media/WhatsApp Video 2023-03-09 at 16.06.03.mp4": "/static/media/WhatsApp Video 2023-03-09 at 16.06.03.e5e824d47d1f375e5e01.mp4",
-    "static/media/WhatsApp Video 2023-03-09 at 16.06.05.mp4": "/static/media/WhatsApp Video 2023-03-09 at 16.06.05.03222cb6d0b2b8770248.mp4",
-    "static/media/record_v2.mp4": "/static/media/record_v2.db5a25f47e328d47c62a.mp4",
     "static/media/tester2.png": "/static/media/tester2.9863649462c947fa98ff.png",
     "static/media/waveSounds.jpg": "/static/media/waveSounds.daba72437257408ffceb.jpg",
     "static/media/kubernetes.png": "/static/media/kubernetes.88e38f11b997f80e8998.png",
     "static/media/nodejs.png": "/static/media/nodejs.31c0e97d5776c294d370.png",
-    "static/media/waveSounds-onWhite.jpg": "/static/media/waveSounds-onWhite.584cb01b6a1f6f270b5c.jpg",
+    "static/media/ainvesting.jpg": "/static/media/ainvesting.584cb01b6a1f6f270b5c.jpg",
     "static/media/python.png": "/static/media/python.f7f12e1bf59e577656a2.png",
     "static/media/typescript.png": "/static/media/typescript.b93c806b3125ac0f9c8a.png",
     "static/media/docker.png": "/static/media/docker.214251bc4fe444606345.png",
     "index.html": "/index.html",
     "main.d556c83b.css.map": "/static/css/main.d556c83b.css.map",
-    "main.74fa95b3.js.map": "/static/js/main.74fa95b3.js.map"
+    "main.86aa13eb.js.map": "/static/js/main.86aa13eb.js.map"
   },
   "entrypoints": [
     "static/css/main.d556c83b.css",
-    "static/js/main.74fa95b3.js"
+    "static/js/main.86aa13eb.js"
   ]
 }
