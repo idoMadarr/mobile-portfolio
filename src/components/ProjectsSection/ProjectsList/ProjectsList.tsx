@@ -7,13 +7,13 @@ import { motion } from 'framer-motion';
 const list = [
   {
     id: 0,
-    title: 'Ainvesting',
-    desc: 'Ainvesting is a social trading App for Crypto CFDs trading that provies real-time market data and advanced trading tools. (available on App Store / Play Store).',
+    title: '8Invest',
+    desc: '8Invest is a social trading App for Crypto CFDs trading that provies real-time market data and advanced trading tools. (available on App Store / Play Store).',
     tech: 'React Native CLI',
     timestamps: 'April 2023',
     image: require('../../../assets/ainvesting.jpg'),
     repo: null,
-    url: 'https://play.google.com/store/apps/details?id=com.uptrend.ainvesting&hl=us',
+    url: null,
   },
   {
     id: 1,

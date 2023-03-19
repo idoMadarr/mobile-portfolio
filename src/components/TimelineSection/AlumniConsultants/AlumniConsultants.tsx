@@ -12,8 +12,8 @@ const AlumniConsultants = () => {
       <p>
         Along with my team, we have built from the ground up a complete trading
         app platform for investing in cryptocurrency, forex, shares and more...
-        A real application for both IOS and Android (Ainvesting). Available on
-        App Store and Play Store.
+        A real application for both IOS and Android (8Invest). Available on App
+        Store and Play Store.
       </p>
       <ul>
         <li>

@@ -15,8 +15,8 @@
   height: 92.37604307034013px;
   background-color: #2b2f38;
   margin: 46.188021535170066px auto 0 auto;
-  border-left: solid 2px #272727;
-  border-right: solid 2px #272727;
+  border-left: solid 2px #1e1e1e;
+  border-right: solid 2px #1e1e1e;
   display: grid;
   transition: 0s;
 }
@@ -36,14 +36,14 @@
 
 .hexagon:before {
   top: -56.5685424949238px;
-  border-top: solid 2.8284271247461903px #272727;
-  border-right: solid 2.8284271247461903px #272727;
+  border-top: solid 2.8284271247461903px #1e1e1e;
+  border-right: solid 2.8284271247461903px #1e1e1e;
 }
 
 .hexagon:after {
   bottom: -56.5685424949238px;
-  border-bottom: solid 2.8284271247461903px #272727;
-  border-left: solid 2.8284271247461903px #272727;
+  border-bottom: solid 2.8284271247461903px #1e1e1e;
+  border-left: solid 2.8284271247461903px #1e1e1e;
 }
 
 .hexagon span {
