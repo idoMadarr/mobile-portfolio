@@ -5,7 +5,7 @@ import classes from './EducationList.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShapes } from '@fortawesome/free-solid-svg-icons';
 import { isAndroid } from 'react-device-detect';
-// asd
+
 const EducationList = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
