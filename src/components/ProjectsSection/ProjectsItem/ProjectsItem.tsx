@@ -1,7 +1,7 @@
-import React from 'react';
-import classes from './ProjectsItem.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faStore } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import classes from "./ProjectsItem.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faStore } from "@fortawesome/free-solid-svg-icons";
 
 interface ProjectsItemPropsType {
   id: number;
@@ -24,12 +24,12 @@ const ProjectsItem: React.FC<ProjectsItemPropsType> = ({
   url,
   repoNavigate,
 }) => {
-  const dynamicColor = id === 2 ? 'black' : 'white';
+  const dynamicColor = id === 0 ? "white" : "black";
 
   return (
-    <div className={classes['list-item']}>
+    <div className={classes["list-item"]}>
       <div>
-        <div className={classes['img-wrapper']}>
+        <div className={classes["img-wrapper"]}>
           <div>
             {repo && (
               <FontAwesomeIcon
@@ -48,7 +48,7 @@ const ProjectsItem: React.FC<ProjectsItemPropsType> = ({
               />
             )}
           </div>
-          <img src={image} alt={'img'} />
+          <img src={image} alt={"img"} />
         </div>
         <p>{title}</p>
         <small>{desc}</small>

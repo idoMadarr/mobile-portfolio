@@ -1,22 +1,17 @@
-import React from 'react';
-import { OrbitControls, Stage } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import React3D from "./React3d";
 
-interface ThreeDModelPropsType {
-  children: JSX.Element;
-  autoRotate?: boolean;
-}
-
-const ThreeDModel: React.FC<ThreeDModelPropsType> = ({
-  children,
-  autoRotate,
-}) => {
+const ThreeDModel = () => {
   return (
-    <Canvas>
-      <Stage environment={'city'} intensity={0.6}>
-        {children}
-      </Stage>
-      <OrbitControls autoRotate={autoRotate || false} enableZoom={false} />
+    <Canvas style={{ height: 100 }}>
+      <ambientLight intensity={0.2} />
+      <React3D />
+      <OrbitControls
+        autoRotate={true}
+        enableZoom={false}
+        enableRotate={false}
+      />
     </Canvas>
   );
 };

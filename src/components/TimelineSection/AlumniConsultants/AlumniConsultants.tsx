@@ -1,14 +1,19 @@
-import Emulator from '../../Emulator/Emulator';
-import classes from './AlumniConsultants.module.css';
+import Emulator from "../../Emulator/Emulator";
+import classes from "./AlumniConsultants.module.css";
 
 const AlumniConsultants = () => {
   return (
     <div className={classes.alumni}>
-      <h3 className={'vertical-timeline-element-title'}>
+      <img
+        src={require("../../../assets/ainvesting.jpg")}
+        width={45}
+        height={45}
+      />
+      <h3 className={"vertical-timeline-element-title"}>
         React Native Mobile Developer
       </h3>
-      <small>(Hands-On Team Lead)</small>
-      <p className={'vertical-timeline-element-subtitle'}>Israel, Herzeliza</p>
+      <small>Hands-On Team Lead</small>
+      <p className={"vertical-timeline-element-subtitle"}>Israel, Herzeliza</p>
       <p>
         Along with my team, we have built from the ground up a complete trading
         app platform for investing in cryptocurrency, forex, shares and more...
@@ -33,11 +38,11 @@ const AlumniConsultants = () => {
       </ul>
       <p>
         <strong>
-          Built from the ground up over one year with me as the{' '}
+          Built from the ground up over one year with me as the{" "}
           <span>main</span> developer for the project.
         </strong>
       </p>
-      <Emulator record={'record_v4'} />
+      <Emulator record={"record_v4"} />
     </div>
   );
 };

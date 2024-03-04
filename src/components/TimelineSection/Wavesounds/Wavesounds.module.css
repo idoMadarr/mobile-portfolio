@@ -1,6 +1,6 @@
 .alumni h3 {
-  font-size: 1.4rem;
-  color: var(--blue);
+    font-size: 1.4rem;
+    color: var(--blue);
 }
 
 .alumni img {
@@ -11,3 +11,5 @@
 .alumni li {
   margin: 1rem 0;
 }
+
+  

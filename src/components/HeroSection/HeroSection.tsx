@@ -1,10 +1,9 @@
-import Device from '../3DModels/Device';
-import ThreeDModel from '../3DModels/3DModel';
-import classes from './HeroSection.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLink, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion';
-import { isAndroid } from 'react-device-detect';
+import ThreeDModel from "../3DModels/3DModel";
+import classes from "./HeroSection.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faLink, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { isAndroid } from "react-device-detect";
 
 const HeroSection = () => {
   const variants = {
@@ -21,51 +20,45 @@ const HeroSection = () => {
 
   return (
     <motion.div
-      id={'About'}
-      className={classes['hero-container']}
+      id={"About"}
+      className={classes["hero-container"]}
       variants={!isAndroid ? variants : {}}
-      initial={'init'}
-      animate={'animate'}
+      initial={"init"}
+      animate={"animate"}
     >
       <div>
         <h2>About</h2>
       </div>
       <div>
+        {!isAndroid && <ThreeDModel />}
         <h1>
-          Hi, I'm <span>Ido Adar</span>, a self-taught Fullstack & Cross
-          Platform Mobile developer.
+          Hi, I'm <span>Ido</span>, a Fullstack & React Native Developer.
         </h1>
         <p>
-          After two years in the law field as a young Corporate Lawyer, I
-          decided to switch my whole career to something entirly different – Web
-          and Mobile Development.
+          With a wealth of hands-on experience and a firm dedication to
+          producing clean and reusable code, I've crafted and shipped several of
+          advanced modern React Native applications from the gound up, including
+          comprehensive cryptocurrency trading platform, a feature-rich music
+          player, an insurance finance application, and more.
         </p>
         <p>
-          Since then, I've found myself working with loads of web technologies,
-          and was exposed to all of the nitty-gritty details of web development
-          by self-learning, Inc Modern JavaScript/TypeScript ES6, React, React
-          Native, Nodejs, SQL & NoSQL Databases (MongoDB), Docker, Kubernetes
-          and much more. I'm highly motivated and proven self-taught developer
-          who likes to solve problems.
+          My primary tech stack includes cutting-edge technologies, such as
+          Modern JavaScript/TypeScript ES6, React, React Native, Node.js, SQL,
+          MongoDB, Docker, kubernetes and beyond. I'm a highly motivated and
+          proven self-taught developer who likes to solve problems. Feel free to
+          get in touch.
         </p>
         <div className={classes.details}>
-          <FontAwesomeIcon icon={faEnvelope} color={'#3498db'} />
+          <FontAwesomeIcon icon={faEnvelope} color={"#3498db"} />
           <small>Idox2x@Gmail.com</small>
-          <FontAwesomeIcon icon={faLink} color={'#3498db'} />
-          <a href={'https://www.linkedin.com/in/ido-adar-1b953314b/'}>
+          <FontAwesomeIcon icon={faLink} color={"#3498db"} />
+          <a href={"https://www.linkedin.com/in/ido-adar-1b953314b/"}>
             Linkedin
           </a>
-          <FontAwesomeIcon icon={faPhone} color={'#3498db'} />
+          <FontAwesomeIcon icon={faPhone} color={"#3498db"} />
           <small>052-5577-575</small>
         </div>
       </div>
-      {!isAndroid && (
-        <div>
-          <ThreeDModel autoRotate>
-            <Device />
-          </ThreeDModel>
-        </div>
-      )}
     </motion.div>
   );
 };
