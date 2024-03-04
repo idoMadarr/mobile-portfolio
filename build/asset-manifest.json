@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2c57fe2.css",
-    "main.js": "/static/js/main.2e452279.js",
-    "static/media/record_v4.mp4": "/static/media/record_v4.59d5805a006d46cd9680.mp4",
+    "main.css": "/static/css/main.4f287975.css",
+    "main.js": "/static/js/main.ba1defc3.js",
     "static/media/tester2.png": "/static/media/tester2.9863649462c947fa98ff.png",
-    "static/media/waveSounds.jpg": "/static/media/waveSounds.daba72437257408ffceb.jpg",
+    "static/media/carinsurance.png": "/static/media/carinsurance.83ed4ddb8b37b97733d2.png",
+    "static/media/wavesounds.png": "/static/media/wavesounds.9c1ead555cd08d42e23e.png",
     "static/media/kubernetes.png": "/static/media/kubernetes.88e38f11b997f80e8998.png",
     "static/media/nodejs.png": "/static/media/nodejs.31c0e97d5776c294d370.png",
     "static/media/ainvesting.jpg": "/static/media/ainvesting.584cb01b6a1f6f270b5c.jpg",
@@ -12,11 +12,11 @@
     "static/media/typescript.png": "/static/media/typescript.b93c806b3125ac0f9c8a.png",
     "static/media/docker.png": "/static/media/docker.214251bc4fe444606345.png",
     "index.html": "/index.html",
-    "main.c2c57fe2.css.map": "/static/css/main.c2c57fe2.css.map",
-    "main.2e452279.js.map": "/static/js/main.2e452279.js.map"
+    "main.4f287975.css.map": "/static/css/main.4f287975.css.map",
+    "main.ba1defc3.js.map": "/static/js/main.ba1defc3.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2c57fe2.css",
-    "static/js/main.2e452279.js"
+    "static/css/main.4f287975.css",
+    "static/js/main.ba1defc3.js"
   ]
 }
