@@ -4,18 +4,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.main img,
-.main video {
-  position: absolute;
-}
-
-.device-img {
-  z-index: 15;
-  overflow: hidden;
-}
-
-.record {
-  width: 218px;
-  z-index: 10;
-}

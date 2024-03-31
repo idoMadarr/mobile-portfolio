@@ -1,3 +1,4 @@
+import Emulator from "../../Emulator/Emulator";
 import classes from "./Phoenix.module.css";
 
 const Phoenix = () => {
@@ -25,6 +26,12 @@ const Phoenix = () => {
         <li>CI/CD proccess with Microsoft AppCenter</li>
         <li>Available on App Store / Google Play Store - “רכב ביטוח הפניקס“</li>
       </ul>
+      <Emulator>
+        <source
+          src={require(`../../../assets/carinsurance_video.mp4`)}
+          type={"video/mp4"}
+        />
+      </Emulator>
     </div>
   );
 };
