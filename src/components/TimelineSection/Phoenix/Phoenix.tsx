@@ -27,10 +27,11 @@ const Phoenix = () => {
         <li>Available on App Store / Google Play Store - “רכב ביטוח הפניקס“</li>
       </ul>
       <Emulator>
-        <source
+        <p>test</p>
+        {/* <source
           src={require(`../../../assets/carinsurance_video.mp4`)}
           type={"video/mp4"}
-        />
+        /> */}
       </Emulator>
     </div>
   );
