@@ -43,11 +43,10 @@ const AlumniConsultants = () => {
         </strong>
       </p>
       <Emulator>
-        <p>test</p>
-        {/* <source
+        <source
           src={require(`../../../assets/ainvesting_video.mp4`)}
           type={"video/mp4"}
-        /> */}
+        />
       </Emulator>
     </div>
   );
