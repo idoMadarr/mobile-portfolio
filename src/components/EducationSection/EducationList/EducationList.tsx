@@ -12,7 +12,7 @@ const EducationList = () => {
   const animation = !isAndroid
     ? {
         opacity: inView ? 1 : 0,
-        y: inView ? 0 : -100,
+        y: inView ? 0 : 100,
         transition: {
           duration: 1,
           ease: 'easeInOut',

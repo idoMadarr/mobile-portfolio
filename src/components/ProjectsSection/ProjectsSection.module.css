@@ -1,9 +1,14 @@
 .projects-main {
-  padding: 4rem;
+  width: 85%;
+  margin: 10rem auto;
 }
 
-@media (max-width: 74rem) {
-  .projects-main {
-    padding: 1.5rem;
-  }
+.collection-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-nav {
+  margin: 0 auto;
+  display: flex;
 }

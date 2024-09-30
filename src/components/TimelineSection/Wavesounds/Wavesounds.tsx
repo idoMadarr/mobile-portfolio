@@ -1,3 +1,4 @@
+import Emulator from "../../Emulator/Emulator";
 import classes from "./Wavesounds.module.css";
 
 const Wavesounds = () => {
@@ -23,6 +24,12 @@ const Wavesounds = () => {
         <li>CI/CD proccess with Microsoft AppCenter</li>
         <li>Beta App is available on Google Play Store - “WaveSounds</li>
       </ul>
+      <Emulator>
+        <source
+          src={require(`../../../assets/wavesounds_record.mp4`)}
+          type={"video/mp4"}
+        />
+      </Emulator>
     </div>
   );
 };

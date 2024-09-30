@@ -1,7 +1,7 @@
 import classes from './TechStack.module.css';
 
 const TechStack = () => {
-  const techgMap = [
+  const techMap = [
     {
       id: 4,
       title: 'JavaScript / TypeScript',
@@ -46,7 +46,7 @@ const TechStack = () => {
 
   return (
     <div className={classes.grid}>
-      {techgMap.map(({ id, title, img }) => (
+      {techMap.map(({ id, title, img }) => (
         <div key={id} className={classes.hexagon}>
           <span>
             <img src={img} />

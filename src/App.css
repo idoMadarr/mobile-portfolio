@@ -2,6 +2,7 @@
   --blue: #3498db;
   --white: #ffffff;
   --greyish: #30383c9e;
+  --soft: #8b9194;
   --purple: #211e2d;
   --grey: #272727;
   --success: #2aaf19;
@@ -23,6 +24,7 @@ body {
 p {
   font-size: 1.2rem;
   color: var(--white);
+  line-height: 36px;
 }
 
 h1 {

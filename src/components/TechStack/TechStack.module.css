@@ -19,6 +19,7 @@
   border-right: solid 2px #1e1e1e;
   display: grid;
   transition: 0s;
+  box-shadow: 16px 3px 20px #00000065;
 }
 
 .hexagon:before,

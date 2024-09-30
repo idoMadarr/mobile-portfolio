@@ -1,0 +1,23 @@
+.item-section-container {
+    margin: 3rem 0;
+    padding: 0px 24px;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+}
+
+.item-section-container button {
+    border: none;
+    width: '100%';
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.item-section-container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 25%;
+    margin: 0 0.5rem;
+}
