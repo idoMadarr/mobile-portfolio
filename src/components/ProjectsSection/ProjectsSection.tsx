@@ -92,7 +92,7 @@ const ProjectsSection = () => {
     : {};
 
   return (
-    <div className={classes['projects-main']}>
+    <div id={'Projects'} className={classes['projects-main']}>
       <ProjectsHeader />
       <motion.div
         className={classes['collection-grid']}
