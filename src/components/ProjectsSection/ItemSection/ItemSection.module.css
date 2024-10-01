@@ -5,6 +5,15 @@
     display: flex;
     overflow: hidden;
     align-items: center;
+    transition: transform 0.9s ease, opacity 0.3s ease;
+}
+
+.item-section-container:hover {
+    transform: scale(1.4);
+}
+
+.item-section-container:active {
+    opacity: 0.2;
 }
 
 .item-section-container p {
