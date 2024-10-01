@@ -15,8 +15,8 @@
   color: var(--blue);
 }
 
-@media (max-width: 74rem) {
+@media (max-width: 70rem) {
   .header {
-    width: 85%;
+    width: 100%;
   }
 }

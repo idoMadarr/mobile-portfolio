@@ -25,7 +25,7 @@ const ProjectsHeader = () => {
       ref={ref}
     >
       <small>MY WORK</small>
-      <h1>Projects</h1>
+      <h1>Experience</h1>
       <p>
         Please check my projects to learn more about my development skills,
         ability to write clean code, solve complex problems, and optimize

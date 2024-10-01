@@ -10,10 +10,6 @@
     },
     {
       "id": 2,
-      "route": "Projects"
-    },
-    {
-      "id": 3,
       "route": "Education"
     }
   ]

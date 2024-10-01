@@ -15,7 +15,7 @@ const ItemSection: React.FC<ItemSectionPropsType> = ({
   return (
     <div onClick={updateState} className={classes['item-section-container']}>
       <img src={image} />
-      <button>{title}</button>
+      <p>{title}</p>
     </div>
   );
 };

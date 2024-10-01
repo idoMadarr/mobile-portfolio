@@ -4,11 +4,10 @@
     cursor: pointer;
     display: flex;
     overflow: hidden;
+    align-items: center;
 }
 
-.item-section-container button {
-    border: none;
-    width: '100%';
+.item-section-container p {
     font-size: 16px;
     background-color: transparent;
     color: var(--white);
@@ -16,8 +15,21 @@
 }
 
 .item-section-container img {
-    width: 30px;
-    height: 30px;
-    border-radius: 25%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20%;
     margin: 0 0.5rem;
+}
+
+@media (max-width: 70rem) {
+    .item-section-container {
+        margin: 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-section-container img {
+        margin: 0rem;
+    }
 }

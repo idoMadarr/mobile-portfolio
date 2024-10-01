@@ -17,9 +17,13 @@ const list = [
       'Together with my team, we built from the ground up a new platform for Crypto CFDs trading that provides real-time market data with advanced trading tools. available on App Store / Play Store – Ainvesting (Australia) / 8Invest (Europe) A real-time application that requires accurate optimization performance, including authentication process, full and customized navigation, Push notification, RTL support (multi language app), upload files, sending emails, and Reanimated effects. Built from the ground up over one year with me as the main developer for the project.',
     tech: 'React Native CLI',
     image: require('../../assets/ainvesting.jpg'),
-    demo: require('../../assets/ainvesting_record.mp4'),
+    demo: null,
     repo: null,
-    url: 'https://play.google.com/store/apps/details?id=com.uptrend.ainvesting',
+    url: {
+      google:
+        'https://play.google.com/store/apps/details?id=com.uptrend.ainvesting',
+      apple: 'https://apps.apple.com/us/app/xtrade-online-trading/id864027750',
+    },
   },
   {
     id: 1,
@@ -28,10 +32,15 @@ const list = [
     about:
       'The Phoenix Carinsurance app allows users to easily purchase and manage their car insurance policies. It features push notifications to remind users of upcoming renewals, full Firebase integration for real-time updates, and secure biometric authentication for a smooth login process. The app also incorporates fluid animations using Reanimated for an enhanced user experience. Available on both the App Store and Play Store, it offers a seamless and modern insurance solution.',
     tech: 'React Native, Microsoft AppCenter, Firebase',
-    image: require('../../assets/carinsurance.png'),
-    demo: require('../../assets/carinsurance_record.mp4'),
+    image: require('../../assets/carinsurance.jpeg'),
+    demo: null,
     repo: null,
-    url: 'https://play.google.com/store/apps/details?id=com.phoenix.carinsurance',
+    url: {
+      google:
+        'https://play.google.com/store/apps/details?id=com.phoenix.carinsurance',
+      apple:
+        'https://apps.apple.com/us/app/%D7%94%D7%A4%D7%A0%D7%99%D7%A7%D7%A1-%D7%91%D7%99%D7%98%D7%95%D7%97-%D7%A8%D7%9B%D7%91/id1644857645',
+    },
   },
   {
     id: 2,
@@ -41,9 +50,13 @@ const list = [
       'This Fullstack (BETA) project is powered by a Node.js server on the backend, handling real-time requests and data management, while the frontend is built with React Native, offering a smooth, mobile-optimized experience. WaveSounds supports seamless music streaming, personalized playlists, and discovery of new music. The app is currently available only on the Play Store, providing users with a rich, interactive music experience.',
     tech: 'React Native, Nodejs, Redis',
     image: require('../../assets/wavesounds.png'),
-    demo: require('../../assets/wavesounds_record.mp4'),
+    demo: null,
     repo: 'https://github.com/idoAdar/ReactNative-TypeScript-waveSounds',
-    url: 'https://play.google.com/store/apps/details?id=com.wavesounds&hl=us&pli=1',
+    url: {
+      google:
+        'https://play.google.com/store/apps/details?id=com.wavesounds&hl=us&pli=1',
+      apple: null,
+    },
   },
   {
     id: 3,
@@ -52,10 +65,15 @@ const list = [
     about:
       'The app features push notifications for important updates, secure biometric login, and full navigation for a seamless user experience. It also incorporates fluid animations with Reanimated for smooth transitions. SmartTravel ensures users stay covered and connected during their travels with all the essential services in one place.',
     tech: 'React Native, Firebase',
-    image: require('../../assets/smarttravel-icon.png'),
-    demo: require('../../assets/smarttravel_record.mp4'),
+    image: require('../../assets/smarttravel-icon.jpeg'),
+    demo: null,
     repo: null,
-    url: 'https://play.google.com/store/apps/details?id=com.phonix.smarttravel&hl=us',
+    url: {
+      google:
+        'https://play.google.com/store/apps/details?id=com.phonix.smarttravel&hl=us',
+      apple:
+        'https://apps.apple.com/us/app/smart-travel-%D7%94%D7%A4%D7%A0%D7%99%D7%A7%D7%A1/id1589611234',
+    },
   },
   {
     id: 4,
@@ -65,9 +83,12 @@ const list = [
       'For supporting the app I created a Node.js server that receives GPS coordinates from a mobile device, analyzes the data, and returns detailed insights such as total distance traveled (km) and average speed. Built with Express for handling requests, Redis for caching, and MongoDB for storing trip data.',
     tech: 'React Native, NodeJS, Redis',
     image: require('../../assets/roadrecorder.jpeg'),
-    demo: require('../../assets/smarttravel_record.mp4'),
+    demo: null,
     repo: null,
-    url: null,
+    url: {
+      google: null,
+      apple: null,
+    },
   },
 ];
 
@@ -92,7 +113,7 @@ const ProjectsSection = () => {
     : {};
 
   return (
-    <div id={'Projects'} className={classes['projects-main']}>
+    <div id={'Experience'} className={classes['projects-main']}>
       <ProjectsHeader />
       <motion.div
         className={classes['collection-grid']}
@@ -112,7 +133,7 @@ const ProjectsSection = () => {
         </div>
         <motion.div
           key={currentProject.id}
-          initial={{ opacity: 0, y: -100 }}
+          initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
