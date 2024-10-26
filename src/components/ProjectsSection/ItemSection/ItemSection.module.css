@@ -1,15 +1,15 @@
 .item-section-container {
-    margin: 3rem 0;
+    margin: 1rem 0;
     padding: 0px 24px;
     cursor: pointer;
     display: flex;
     overflow: hidden;
     align-items: center;
-    transition: transform 0.9s ease, opacity 0.3s ease;
+    transition: transform 0.2s ease, opacity 0.3s ease;
 }
 
 .item-section-container:hover {
-    transform: scale(1.4);
+    transform: scale(1.1);
 }
 
 .item-section-container:active {
