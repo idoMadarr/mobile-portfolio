@@ -86,7 +86,8 @@ const list = [
     demo: null,
     repo: null,
     url: {
-      google: null,
+      google:
+        'https://play.google.com/store/apps/details?id=com.roadrecorder&hl=us',
       apple: null,
     },
   },
